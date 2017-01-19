@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.buychat.utils.fonts.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Explore"
+        android:visibility="gone" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nest_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="CITY MARKET"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/view_all_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="VIEW ALL  >"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+           <!--  HERE GOES RADIO BUTTON  -->
+
+            <!--      TEST       -->
+
+            <LinearLayout
+                android:id="@+id/testing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:tag="green">
+
+                    <ImageView
+                        android:id="@+id/fashion_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fashion_green_new" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/fashion_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="Fashion"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="grey"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/beauty_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/beauty_grey_new" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/beauty_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Beauty"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:tag="grey">
+
+                    <ImageView
+                        android:id="@+id/grocery_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/grocery_grey_new" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/grocery_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Grocery"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="grey"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/elecs_img"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/elec_grey_new" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/elecs_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Electronics"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--   TEST  -->
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                app:ael_duration="400"
+                app:ael_expanded="false">
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/viewpager_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/down_arrow_fashion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/down_arrow_beauty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/down_arrow_grocery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow_white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/down_arrow_electronics"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/down_arrow_white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="CITY SHOP"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:text="VIEW ALL  >"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+            <LinearLayout
+                android:id="@+id/radioBelowGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/fashion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fashion_cat" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="Fashion"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/beauty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/beauty_cat" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Beauty"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/grocery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/grocery_cat" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Grocery"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/electronics"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/electronics_cat" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Electronics"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+            <LinearLayout
+                android:id="@+id/radioBelowGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/restaurants"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/restaurant" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="Restaurants"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/bukas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bukas" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Bukas"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/event_ticket"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/event_tickets" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Event Tickets"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/education"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/boutique_grey_new" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Boutiques"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+            <LinearLayout
+                android:id="@+id/radioBelowGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/taxis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/taxis" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="Taxis"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/flight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flights" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Flights"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/hotels"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotels" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hotels"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/movieTicket"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/movie_tickets" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Movie Tickets"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/radioBelowGroup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/payBill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/paybill" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:text="Pay Bill"
+                        android:textSize="@dimen/explore_small"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <LinearLayout
+                    android:id="@+id/laundry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:button="@android:color/transparent"
+                        android:gravity="bottom|center"
+                        android:paddingTop="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingBottom="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/laundry" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Laundry"
+                        android:textSize="@dimen/explore_small"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:gravity="bottom|center"
+                    android:text="Grocery" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greytext"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:gravity="bottom|center"
+                    android:text="Electronics" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/greytext" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="OFFICIAL ACCOUNTS"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black" />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/view_all_brands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="VIEW ALL  >"
+                    android:textColor="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/greytext"/>
+
+            <HorizontalScrollView
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:id="@+id/brand_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <include layout="@layout/dummy_official_account_layout" />
+
+
+            </HorizontalScrollView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/greytext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

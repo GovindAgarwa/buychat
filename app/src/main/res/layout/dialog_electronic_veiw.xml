@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/popup_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+
+            android:src="@drawable/close" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+             />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Sony BRAVIA KLV 24P422C 60 cm (24 inches) HD Ready LED TV"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text="(32K16074REVD, x2 HDMI, x2USB)"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black" />
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="5"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=" 12,989"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/offer_price"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="16,000"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="#f27258"
+                android:layout_gravity="center"
+                android:id="@+id/discount"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="18% off"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                />
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:id="@+id/quantity_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape_popup"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="1"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/plus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape_popup"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/size_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/popup_fashion_small"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape_popup"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+                <TextView
+                    android:id="@+id/popup_fashion_midium"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:background="@drawable/circle_shape_popup"
+                    android:gravity="center"
+                    android:text="M"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+
+                <TextView
+                    android:id="@+id/popup_fashion_large"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_shape_popup"
+                    android:gravity="center"
+                    android:text="L"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+        </FrameLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#16a652"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="ADD TO MY LIST"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

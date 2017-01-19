@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/top_relative"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/landing_img_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+    <com.buychat.utils.fonts.TextViewBold
+        android:id="@+id/title_market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAMPLE"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

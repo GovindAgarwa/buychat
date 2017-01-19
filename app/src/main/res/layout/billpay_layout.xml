@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:clickable="true"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:padding="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Enter NEPA AccountID"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Enter AccountID"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:gravity="center"
+                android:background="@drawable/border_green"
+                />
+  </RelativeLayout>
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Name"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Enter AccountID"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Bill Date"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Select Bill Date"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Amount"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Enter Amount"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Status"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Enter Status"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Paid Date"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Select Paid Date"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Due Date"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.EditTextRegular
+                android:layout_margin="16dp"
+                android:layout_below="@+id/text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="Select Due Date"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:imeOptions="actionNext"
+                android:gravity="left"
+                android:background="@drawable/border_green"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+
+        <com.buychat.utils.fonts.ButtonMedium
+            android:layout_marginTop="20dp"
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_selector_green"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

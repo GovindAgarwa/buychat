@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/logos_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.buychat.utils.RoundedImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/starting_letter1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="S"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_green"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.9"
+                android:orientation="vertical">
+
+                <com.buychat.utils.fonts.TextViewRegular
+                    android:id="@+id/logos_name"
+                    android:text="The Royal Comfost"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <com.buychat.utils.fonts.TextViewRegular
+                    android:id="@+id/logos_type"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nigerian Cakes, Bread Bekary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/map_logo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/marker" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/map_address"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.90"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="11th main, 4th block, lagos, Nigeria Bekary Bekary Bekary"
+                        android:textSize="@dimen/text_small"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/order_pic"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/scooter" />
+
+                    <com.buychat.utils.fonts.TextViewRegular
+                        android:id="@+id/order_time"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.90"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:text="Min order #4 | Delivery : N1  Bekary  Bekary"
+                        android:textSize="@dimen/text_small"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RatingBar
+                    android:layout_gravity="center"
+                    android:rating="5"
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:numStars="5"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:layout_weight="0.90" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_arrow_round"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/greytext"></View>
+
+</LinearLayout>

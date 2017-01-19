@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/logos_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/hotel_dummy" />
+
+                    <TextView
+                        android:id="@+id/starting_letter1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:text="S"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_green"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.9"
+                android:orientation="vertical">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/buisness_name"
+                    android:text="The Talbolt Hotel"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/message"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your order was successfully deliverd"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:text="27 minutes" />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/count"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:numStars="5"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="1"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:background="@drawable/circle_whole_green" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/greytext"></View>
+
+</LinearLayout>

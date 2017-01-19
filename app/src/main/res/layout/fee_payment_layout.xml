@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:padding="16dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textColor="@color/black"
+                android:checked="true"
+                android:layout_weight="0.5"
+                android:id="@+id/radioButton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fee Payment"
+                />
+
+            <RadioButton
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:id="@+id/radioButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="New Registration"
+               />
+            </RadioGroup>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/fee_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/feepay_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Select Location"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/feepay_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Select Course"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/feepay_enrolement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Student Name"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newReg_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ellipsize="end"
+
+                    android:hint="Select Location"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Select Course"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Student Name"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ellipsize="end"
+                    android:hint="Student Email ID"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/new_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ellipsize="end"
+                    android:hint="Amount"
+                    android:maxLines="1"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:paddingRight="16dp"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/morethan"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:textColor="@android:color/black" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+    <com.buychat.utils.fonts.ButtonMedium
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector_green"
+        android:text="Proceed to pay"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+</RelativeLayout>

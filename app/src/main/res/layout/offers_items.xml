@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+    <com.buychat.utils.fonts.TextViewBold
+        android:paddingLeft="10dp"
+        android:id="@+id/title"
+        android:text="Use code - FLAT50 on event tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <com.buychat.utils.fonts.TextViewRegular
+        android:paddingLeft="10dp"
+        android:id="@+id/description"
+        android:text="Now enjoy flat 50% rates on this event tickets by using the code - FLAT50 on the time of bookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/map_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender" />
+
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/date"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="Ends on 23 Jul 2016"
+                android:textSize="@dimen/text_small"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/verified" />
+
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="Verified"
+                android:textSize="@dimen/text_small"
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/grey"></View>
+
+</LinearLayout>

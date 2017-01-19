@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+  >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_profile_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical">
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Name"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:hint="Enter your name"
+            android:background="@null"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/grey"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical">
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Mobile No"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black" />
+
+        <com.buychat.utils.fonts.TextViewRegular
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#326b6d6e"></View>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="vertical">
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Email"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black" />
+
+        <com.buychat.utils.fonts.TextViewRegular
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#326b6d6e"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Notification Sound"
+            android:padding="10dp"/>
+
+        <CheckBox
+            android:padding="10dp"
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#326b6d6e"></View>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#326b6d6e"></View>
+
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+            <com.buychat.utils.fonts.ButtonRegular
+                android:id="@+id/update"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector_green"
+                android:text="UPDATE PROFILE"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+
+</RelativeLayout>

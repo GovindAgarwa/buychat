@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" >
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Location"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Medium"
+            />
+        <ImageView
+            android:id="@+id/popup_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|right"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

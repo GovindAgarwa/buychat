@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/order_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:src="@drawable/money" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/product_name"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="Chicken Pizza"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="-"
+            android:gravity="center"
+            android:background="@drawable/cornorcurveshape_grey"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="999"
+            android:id="@+id/quantity"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="+"
+            android:id="@+id/plus"
+            android:gravity="center"
+            android:background="@drawable/cornorcurveshape"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp"
+                android:id="@+id/product_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="200000"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/greytext"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+    android:layout_above="@+id/submit"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainCategoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            app:tabMaxWidth="0dp"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="2dp"
+            app:tabBackground="@color/colorPrimary"
+            app:tabMode="fixed"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+    <com.buychat.utils.fonts.ButtonRegular
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector_green"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+
+</RelativeLayout>

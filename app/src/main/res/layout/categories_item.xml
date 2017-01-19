@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <com.buychat.utils.RoundedImageView
+            android:layout_width="135dp"
+            android:id="@+id/item_Picture"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            />
+
+        <com.buychat.utils.fonts.TextViewRegular
+            android:id="@+id/item_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Bread and Bakery"
+            android:ellipsize="end"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/black" />
+
+
+        <com.buychat.utils.fonts.TextViewRegular
+            android:id="@+id/item_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="500 Items"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/imageView"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.buychat.utils.fonts.TextViewBold
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+        <com.buychat.utils.fonts.TextViewBold
+            android:id="@+id/total_price"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageView"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+            android:padding="15dp"
+        android:src="@drawable/money_icon"
+        />
+
+        <com.buychat.utils.fonts.TextViewRegular
+            android:id="@+id/message"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+</LinearLayout>
+</RelativeLayout>

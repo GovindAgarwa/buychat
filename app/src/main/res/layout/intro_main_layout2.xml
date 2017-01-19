@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"> <!-- todo theme -->
+
+
+
+        <com.buychat.utils.AutoScrollViewPager
+            android:id="@+id/tutorial_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_above="@+id/start"/>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/start"
+            android:background="@drawable/transparent_gradient_down">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:id="@+id/text_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/write_label"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:overScrollMode="never"/>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dip"
+                app:fillColor="@color/colorPrimary"
+                app:strokeColor="@color/white"
+                app:pageColor="@color/white"
+                app:strokeWidth="2dp"/>
+
+
+        </LinearLayout>
+
+
+
+        <com.buychat.utils.fonts.ButtonRegular
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:minHeight="0dp"
+            android:minWidth="168dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="GET STARTED"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    </layout>

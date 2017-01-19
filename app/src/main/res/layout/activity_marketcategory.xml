@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainCategoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" >
+
+            <LinearLayout
+                android:id="@+id/firstTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <com.buychat.utils.fonts.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BuyChat"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:padding="8dp"
+                    android:src="@drawable/location_white"/>
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lagos"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:padding="8dp"
+                    android:src="@drawable/edit_white"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            app:tabMaxWidth="0dp"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/black"
+            app:tabIndicatorHeight="2dp"
+            app:tabBackground="@color/colorPrimary"
+            app:tabMode="scrollable"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabGravity="fill"/>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/top_relative"
+           >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/landing_img_slide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop" />
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:id="@+id/title_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAMPLE"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:padding="10dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

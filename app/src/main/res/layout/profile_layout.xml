@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_logo_image"
+            android:id="@+id/business_background"
+            android:layout_gravity="center_horizontal" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerInside"
+        android:id="@+id/business_image"
+        android:layout_gravity="center_horizontal" />
+
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="BuyChat ID"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/buychat_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text="31256242212"
+                android:textAppearance="@android:style/TextAppearance.Small"
+         />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Hours"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/work_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:text="Mon, The, Wed, Thu, Fri, Sat 7:45 am to 11:00 am"
+                android:textAppearance="@android:style/TextAppearance.Small"
+       />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical">
+
+            <com.buychat.utils.fonts.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Address"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/black" />
+
+            <com.buychat.utils.fonts.TextViewRegular
+                android:id="@+id/profile_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:paddingLeft="16dp"
+                android:text="The Royal Comfort, 11th Main, 4th Block, Lagos, Nigeria - 560043"
+                android:textAppearance="@android:style/TextAppearance.Small"
+       />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/lite_listrow_map"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                map:liteMode="true"
+                map:mapType="none" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                ></View>
+
+
+            <LinearLayout
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:layout_height="wrap_content">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Categories"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/black" />
+                <HorizontalScrollView
+                    android:id="@+id/brand_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/dummy_official_account_layout" />
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/description_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                android:layout_height="wrap_content">
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:padding="16dp"
+                    android:text="Description"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:layout_height="wrap_content" />
+                <com.buychat.utils.fonts.TextViewRegular
+                    android:id="@+id/business_description"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text=""
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                ></View>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/payment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+
+                android:orientation="vertical">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Payment Methods"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/card1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/simple_pay"
+                        />
+
+                    <ImageView
+                        android:id="@+id/card2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:src="@drawable/cash_on_delivery"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"></View>
+
+            <LinearLayout
+
+                android:id="@+id/service_area_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+
+                android:orientation="vertical">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Service Area"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/black" />
+
+                <com.buychat.utils.fonts.TextViewRegular
+                    android:id="@+id/service_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Lagos, Balgon Market, Computer Villege, Albha Market, Mile 12 Market, Gbhagi Market, Aleshyalony, ibadan, Abuja, Ukato Market, Wuse Market, FCT Market"
+                    android:textAppearance="@android:style/TextAppearance.Small"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/order_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.buychat.utils.fonts.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="Order Type"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:id="@+id/cityshop_homedelivery"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/home_delivery_one"
+                            android:layout_weight="0.90" />
+                        <com.buychat.utils.fonts.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|top"
+                            android:text="Home Delivery"
+                            android:layout_weight="0.10"
+                            android:layout_gravity="top|center"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="@android:color/darker_gray"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:id="@+id/cityshop_pre_Order"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/home_delivery_two"
+                            android:layout_weight="0.90" />
+
+                        <com.buychat.utils.fonts.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|top"
+                            android:text="Pre- Order"
+                            android:layout_weight="0.10"
+                            android:layout_gravity="top|center"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:id="@+id/cityshop_parcel"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/home_delivery_three"
+                            android:layout_weight="0.90" />
+
+                        <com.buychat.utils.fonts.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|top"
+                            android:text="Take Away"
+                            android:layout_weight="0.10"
+                            android:singleLine="true"
+                            android:layout_gravity="top|center"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="@android:color/darker_gray" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

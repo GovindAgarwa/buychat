@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.buychat">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".app.BuyChat"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainCategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MarketCategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile_actvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainCategoryDetailActivity"
+            android:label="@string/title_activity_category_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CategoryListActivity"
+            android:label="@string/title_activity_category_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SubCategoryListActivity"
+            android:label="@string/title_activity_category_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PickLocationActivity"
+            android:label="@string/title_activity_category_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ProductListActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChatMainActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DeliveryAddressListActivity"
+            android:label="@string/title_delivery_address_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CheckoutOptionsActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SearchListActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MarketActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.BrandsActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.BrandProfileActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.FAQActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UserProfileActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.HistoryActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity android:name=".activities.OrderHistroyDetailsActivity"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="01adfe677312a5817bf8f6dc3599e2299a6fb481" />
+    </application>
+
+</manifest>

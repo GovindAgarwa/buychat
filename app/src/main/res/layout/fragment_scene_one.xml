@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/sharedImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/intro_dummy"
+            android:tag="shared_element" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/transparent_gradient_down">
+
+        <com.buychat.utils.fonts.TextViewBold
+            android:id="@+id/text_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="33dp"
+            android:gravity="center"
+            android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/deviceImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/deviceImagePadding"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/sharedImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/intro_dummy"
+                android:tag="shared_element" />
+
+            <TextView
+                android:id="@+id/deviceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text=""
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
